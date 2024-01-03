@@ -14,6 +14,18 @@ const initialAppointmentList = [
     isStarred: true,
     date: new Date(),
   },
+  {
+    id: uuidv4(),
+    title: 'ear',
+    isStarred: true,
+    date: new Date(),
+  },
+  {
+    id: uuidv4(),
+    title: 'nose',
+    isStarred: true,
+    date: new Date(),
+  },
 ]
 
 class Appointments extends Component {
@@ -40,7 +52,7 @@ class Appointments extends Component {
     }
     this.setState(prevState => ({
       title: '',
-      date: 'dd-mm-yyyy',
+      date: '',
       appointmentList: [...prevState.appointmentList, newAppointment],
     }))
   }
@@ -81,7 +93,7 @@ class Appointments extends Component {
               />
               <button
                 className="btn"
-                type="button"
+                type="submit"
                 onClick={this.onAddAppointment}
               >
                 Add

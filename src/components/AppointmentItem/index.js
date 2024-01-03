@@ -8,9 +8,11 @@ const AppointmentItem = props => {
 
   const year = date.getFullYear()
   const month = date.getMonth()
-  const day = date.getDay()
+  const day = date.getDate()
+  console.log(year)
 
   const finalDate = format(new Date(year, month, day), 'dd MMMM yyyy, EEEE')
+
   return (
     <li className="list-container">
       <div>
