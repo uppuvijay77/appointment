@@ -90,9 +90,10 @@ class Appointments extends Component {
   }
 
   render() {
-    const {title, date} = this.state
+    const {title, date, filterBtn} = this.state
 
     const filteredList = this.filterStrList()
+    const filterBtnClassName = filterBtn ? 'active-btn' : ''
 
     return (
       <div className="bg-container">
@@ -140,7 +141,7 @@ class Appointments extends Component {
           <div className="bottom">
             <h1 className="heading">Appointments</h1>
             <button
-              className="str-btn"
+              className={`str-btn ${filterBtnClassName}`}
               type="button"
               onClick={this.onToggleFilterBtn}
             >

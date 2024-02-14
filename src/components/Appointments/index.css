@@ -87,6 +87,12 @@
   border: 1px solid #9897f0;
   cursor: pointer;
 }
+
+.active-btn {
+  background-color: #9897f0;
+  color: #ffffff;
+}
+
 ul {
   list-style: none;
 }
