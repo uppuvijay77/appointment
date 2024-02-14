@@ -1,0 +1,23 @@
+/* Write your CSS here */
+/* Write your CSS here */
+.list-container {
+  border-radius: 10px;
+  border: 1px solid #b5b7c4;
+  padding: 10px;
+  max-width: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.str-btn {
+  cursor: pointer;
+  margin-top: 0px;
+}
+.str-img {
+  height: 20px;
+  width: 20px;
+  border: none;
+}
+p {
+  font-size: 12px;
+}
