@@ -42,8 +42,7 @@ class Appointments extends Component {
   }
 
   onChangeDate = event => {
-    const parsedDate = new Date(event.target.value)
-    this.setState({date: parsedDate})
+    this.setState({date: event.target.value})
   }
 
   onAddAppointment = event => {
