@@ -10,11 +10,11 @@ const AppointmentItem = props => {
   // const parsedDate = new Date(date)
   // console.log(parsedDate)
 
-  const year = date.getFullYear()
-  const month = date.getMonth()
-  const day = date.getDate()
+  // const year = date.getFullYear()
+  // const month = date.getMonth()
+  // const day = date.getDate()
 
-  const finalDate = format(new Date(year, month, day), 'dd MMMM yyyy, EEEE')
+  const finalDate = format(new Date(date), 'dd MMMM yyyy, EEEE')
 
   const onClickingBtn = () => {
     onToggleStrBtn(id)
